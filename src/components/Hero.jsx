@@ -12,10 +12,10 @@ const Hero = () => {
   const contentRef = useRef(null);
 
   const developerRoles = [
-    'FEATURE FILM // FULL-STACK ARCHITECT',
-    'ORIGINAL SERIES // AI & ML SPECIALIST',
-    'BLOCKBUSTER // DISTRIBUTED SYSTEMS',
-    'ACCLAIMED // ALGORITHMIC PROBLEM SOLVER'
+    'FEATURE FILM // AI & ML ENGINEER',
+    'ORIGINAL SERIES // LLM & RAG SPECIALIST',
+    'BLOCKBUSTER // AUTOMATED QA & NEURAL CODE REPAIR',
+    'ACCLAIMED // DEEP LEARNING & COMPUTER VISION'
   ];
 
   useEffect(() => {
@@ -161,7 +161,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* 2. Direct Mouse Tracking Spotlight Beam (Glows wherever you move) */}
+      {/* 2. Direct Mouse Tracking Spotlight Beam */}
       <div
         ref={spotlightRef}
         className="absolute top-0 left-0 w-[600px] h-[600px] rounded-full pointer-events-none z-10 opacity-0 blur-[90px] transition-opacity duration-300"
@@ -179,11 +179,11 @@ const Hero = () => {
             <span className="w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
             <span className="text-red-500 font-bold tracking-wider">NETFLIX DEVELOPER SERIES</span>
             <span className="text-white/40">|</span>
-            <span className="text-white/80">SEASONS 2024 - 2026</span>
+            <span className="text-white/80">CLASS OF 2026</span>
           </div>
           <div className="hidden md:flex items-center gap-2 text-xs font-mono text-white/50 tracking-wider">
-            <span className="px-2 py-0.5 border border-white/20 rounded bg-black/40">FULL-STACK 4K</span>
-            <span className="px-2 py-0.5 border border-white/20 rounded bg-black/40">AI / ML CERTIFIED</span>
+            <span className="px-2 py-0.5 border border-white/20 rounded bg-black/40">ZOHO CORP ALUM</span>
+            <span className="px-2 py-0.5 border border-white/20 rounded bg-black/40">ICSTEM '26 AUTHOR</span>
           </div>
         </div>
 
@@ -194,27 +194,27 @@ const Hero = () => {
           <div className="lg:col-span-5 flex flex-col items-start space-y-5 text-left">
             
             <div className="hero-anim-item flex items-center gap-3">
-              <span className="px-2.5 py-0.5 bg-red-600 text-white font-black text-xs rounded tracking-widest shadow-[0_0_20px_rgba(229,9,20,0.8)] animate-pulse">TOP 1%</span>
-              <span className="text-white/80 text-xs font-mono tracking-widest uppercase">Software Engineer & Problem Solver</span>
+              <span className="px-2.5 py-0.5 bg-red-600 text-white font-black text-xs rounded tracking-widest shadow-[0_0_20px_rgba(229,9,20,0.8)] animate-pulse">99.2% REPAIR ACCURACY</span>
+              <span className="text-white/80 text-xs font-mono tracking-widest uppercase">AI & Data Science Specialist</span>
             </div>
 
             <h1 className="hero-anim-item text-5xl md:text-7xl font-black tracking-tighter text-white leading-[0.95] drop-shadow-[0_15px_30px_rgba(0,0,0,0.9)]">
-              SUSHMITA <br />
+              HARITHA S. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-600 to-red-700 drop-shadow-[0_0_35px_rgba(220,38,38,0.5)]">
-                DEV.ENGINE
+                AI / ML ENGINEER
               </span>
             </h1>
 
             <div className="hero-anim-item flex items-center gap-3 text-xs font-mono text-red-400 font-bold">
-              <span className="px-2 py-0.5 bg-red-500/10 border border-red-500/30 rounded text-red-500">99.9% Uptime</span>
+              <span className="px-2 py-0.5 bg-red-500/10 border border-red-500/30 rounded text-red-500">Python Expert</span>
               <span className="text-white/40">•</span>
-              <span>React • Node.js • PostgreSQL</span>
+              <span>FastAPI • React • LLMs</span>
               <span className="text-white/40">•</span>
-              <span className="text-white/70">Docker & Cloud</span>
+              <span className="text-white/70">PyTorch & RAG</span>
             </div>
 
             <p className="hero-anim-item text-sm md:text-base text-white/80 font-light leading-relaxed max-w-md drop-shadow">
-              Architecting robust full-stack systems, building scalable multi-tenant SaaS platforms, and engineering cutting-edge AI integrations.
+              Specializing in Large Language Models, local GPU-accelerated neural code healing, document AI automation, and predictive optimization systems.
             </p>
 
             {/* Action Button Set */}
@@ -267,19 +267,19 @@ const Hero = () => {
 
                 <img
                   src={pictureImg}
-                  alt="Developer Portrait"
+                  alt="Haritha S - AI & ML Engineer"
                   className="w-full h-[330px] md:h-[390px] object-cover rounded-xl filter contrast-125 brightness-105 group-hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
           </div>
 
-          {/* Right Side: Technical Specs & Stack */}
+          {/* Right Side: Technical Specs & Academic / Industry Commendations */}
           <div className="hero-anim-item lg:col-span-3 flex flex-col items-start lg:items-end space-y-4 text-left lg:text-right">
             <div className="p-5 bg-black/80 backdrop-blur-2xl border border-white/15 rounded-xl shadow-2xl max-w-xs">
-              <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold mb-2">Core Stack & Awards</h3>
+              <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold mb-2">Key Milestones</h3>
               <p className="text-xs text-white/80 leading-relaxed font-light">
-                Flipkart GRiD 7.0 Semi-Finalist, AlgoUniversity Tech Fellow, GitHub Foundations Certified.
+                Commendation from Ministry Senior Scientists • Published Research Author at ICSTEM 2026 • Zoho CRM AI Systems Intern.
               </p>
             </div>
           </div>
@@ -288,12 +288,12 @@ const Hero = () => {
 
         {/* Bottom Cinematic Ticker */}
         <div className="hero-anim-item flex items-center justify-between text-xs font-mono text-white/50 tracking-widest uppercase">
-          <span>ENGINEERED FOR SCALABILITY</span>
-          <span>[ PORTFOLIO RELEASE v2.6 ]</span>
+          <span>ENGINEERED FOR INTELLIGENCE</span>
+          <span>[ PORTFOLIO RELEASE v2026 ]</span>
         </div>
       </div>
 
-      {/* 4. Ultra Pro Max Custom Precision Cursor Suite */}
+      {/* 4. Custom Precision Cursor Suite */}
       <div
         ref={cursorDotRef}
         className="absolute top-0 left-0 z-50 pointer-events-none w-3 h-3 bg-red-600 rounded-full shadow-[0_0_15px_#E50914]"
@@ -307,7 +307,7 @@ const Hero = () => {
       {/* --- NETFLIX-THEMED DEVELOPER NAVBAR --- */}
       <header className="absolute top-0 left-0 z-50 w-full max-w-7xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between pointer-events-auto">
         <div className="text-2xl font-black text-red-600 tracking-tighter flex items-center gap-2 drop-shadow-[0_2px_15px_rgba(229,9,20,0.9)]">
-          SUSHMITA<span className="w-1.5 h-1.5 rounded-full bg-white inline-block"></span>
+          HARITHA S.<span className="w-1.5 h-1.5 rounded-full bg-white inline-block"></span>
         </div>
         <nav className="hidden md:flex items-center gap-8 text-xs font-mono uppercase tracking-widest text-white/80">
           <a href="#home" className="hover:text-red-500 transition-colors">Home</a>

@@ -4,69 +4,69 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Authentic Project Data based on your engineering portfolio
+// Authentic Project Data based on Haritha S.'s Engineering Portfolio
 const projectsData = [
   {
-    title: "Notice Hub",
-    category: "Full-Stack Architecture",
-    description: "Consolidates university announcements and streamlines real-time student communication with high uptime.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
+    title: "Automated Software QA & Neural Repair",
+    category: "LLM Inference & Code Healing",
+    description: "Full-stack framework orchestrating local GPU-accelerated LLM inference with sub-second repair latency and 99.2% schema validation success.",
+    tags: ["React", "FastAPI", "Python", "Local LLMs"],
     match: "99%",
     episode: "S01 E01"
   },
   {
-    title: "Multi-Tenant SaaS Platform",
-    category: "Cloud & Distributed Systems",
-    description: "Containerized enterprise SaaS featuring strict database isolation and granular role-based access control.",
-    tags: ["Docker", "PostgreSQL", "Node.js", "Express"],
+    title: "Stateless Agentic AI Platform & MCP",
+    category: "Agentic Workflows & Tooling",
+    description: "Scalable stateless backend implementing Model Context Protocol (MCP) for standardizing context routing between AI agents and tools.",
+    tags: ["Python", "FastAPI", "React", "MCP Protocol"],
     match: "98%",
     episode: "S01 E02"
   },
   {
-    title: "Payment Gateway System",
-    category: "Fintech Architecture",
-    description: "Simulates complex transaction state management, webhook verification, and multi-method processing.",
-    tags: ["JavaScript", "PostgreSQL", "REST APIs", "Docker"],
+    title: "Distributed Microservices Gateway",
+    category: "Distributed Systems & Networking",
+    description: "High-throughput data processing engine with algorithm optimization and secure HTTP/HTTPS stateless request routing.",
+    tags: ["HTTPS", "Microservices", "Python", "REST APIs"],
     match: "97%",
     episode: "S01 E03"
   },
   {
-    title: "Productivity Suite Extension",
-    category: "Client-Side Engineering",
-    description: "Custom Chrome extension built with Chrome APIs and advanced JavaScript for task automation and management.",
-    tags: ["JavaScript", "Chrome APIs", "Tailwind CSS", "HTML5"],
+    title: "AI Solar Energy Optimization Engine",
+    category: "Predictive Analytics & Smart Grid",
+    description: "Hybrid AI architecture comparing LSTM & CNN models using solar irradiance and climate metrics for maximum production efficiency.",
+    tags: ["TensorFlow", "PyTorch", "Python", "Power BI"],
     match: "99%",
     episode: "S01 E04"
   },
   {
-    title: "AI & ML Diagnostic Engine",
-    category: "Artificial Intelligence",
-    description: "Intelligent data processing pipeline leveraging machine learning models and NLP workflows.",
-    tags: ["Python", "Machine Learning", "NLP", "AWS"],
+    title: "Zoho CRM Document & OCR Ingestion",
+    category: "Enterprise AI & Data Processing",
+    description: "Automated document data entry system bridging physical records and digital systems using Tesseract OCR and LLM resume parsing.",
+    tags: ["Python", "OCR", "LLMs", "Recommendation Systems"],
     match: "96%",
     episode: "S01 E05"
   },
   {
-    title: "Algorithmic Problem Solver",
-    category: "Competitive Programming",
-    description: "Optimized data structure solutions across LeetCode, CodeChef, and GeeksforGeeks platforms.",
-    tags: ["Data Structures", "Algorithms", "C++", "JavaScript"],
+    title: "Polyglot Logic Synthesis Engine",
+    category: "Autonomous Systems",
+    description: "Code optimization engine that refactors inefficient algorithmic structures into high-performance, low-complexity execution blocks.",
+    tags: ["Python", "Algorithms", "Data Structures", "FastAPI"],
     match: "99%",
     episode: "S01 E06"
   },
   {
-    title: "Portfolio Cinematics v2.6",
-    category: "UI/UX & Animation",
-    description: "Award-winning dark studio interactive portfolio featuring GSAP physics and responsive layouts.",
-    tags: ["React", "GSAP", "Tailwind CSS", "Framer Motion"],
+    title: "Cinematics Portfolio Studio v2026",
+    category: "UI/UX & Web Performance",
+    description: "High-performance dark-themed studio portfolio featuring custom GSAP physics, Web Audio API sound synthesizers, and 3D card tilt effects.",
+    tags: ["React", "GSAP", "Tailwind CSS", "JavaScript"],
     match: "100%",
     episode: "S01 E07"
   },
   {
-    title: "Cloud CI/CD Pipeline",
-    category: "DevOps & Infrastructure",
-    description: "Automated deployment workflows using GitHub Actions and containerized Docker environments.",
-    tags: ["Docker", "GitHub Actions", "CI/CD", "Render"],
+    title: "Smart Grid Interactive Dashboard",
+    category: "Data Visualization & Forecasting",
+    description: "Real-time interactive dashboard visualizing complex solar analytics and energy demand forecasting for smart grid infrastructure.",
+    tags: ["React", "Python", "Power BI", "Scikit-Learn"],
     match: "98%",
     episode: "S01 E08"
   }
@@ -161,7 +161,7 @@ const Projects = () => {
             ease: "back.out(1.2)"
           }, "-=0.6");
 
-          // 3. Cards magically spread out into an ultra-clean blockbuster grid layout
+          // 3. Cards spread out into standard layout grid
           tl.to(cardsRef.current, {
             x: (i) => {
               const w = Math.max(...cardsRef.current.map(c => c?.offsetWidth || 0)) || 360;
@@ -290,7 +290,7 @@ const Projects = () => {
                   </span>
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-mono text-red-400 font-bold">{project.match} Match</span>
-                    <span className="text-[10px] font-mono border border-white/30 px-1 text-white/70">HD</span>
+                    <span className="text-[10px] font-mono border border-white/30 px-1 text-white/70">4K</span>
                   </div>
                 </div>
 

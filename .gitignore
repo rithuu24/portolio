@@ -1,0 +1,8 @@
+@"
+node_modules/
+.cache/
+dist/
+.netlify/
+*.log
+.env
+"@ | Set-Content .gitignore
